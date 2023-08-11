@@ -18,7 +18,7 @@ services:
     image: rabbitmq:3-management-alpine
 
   identity-api:
-    image: ${REGISTRY:-eshop}/identity.api:${PLATFORM:-linux}-${TAG:-latest}
+    image: shubhasis/ecomshop/identity-api-1.0:latest
     build:
       context: .
       dockerfile: Services/Identity/Identity.API/Dockerfile
